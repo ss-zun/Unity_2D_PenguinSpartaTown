@@ -13,6 +13,20 @@ public class PlayerInputController : TopDownController
     }
 
     /// <summary>
+    /// 플레이어의 움직임이 처리된 후에 카메라를 업데이트
+    /// </summary>
+    private void LateUpdate()
+    {
+        // 카메라를 플레이어의 위치로 이동
+        if (camera != null)
+        {
+            Vector2 playerPosition = transform.position;
+            Vector3 cameraPosition = camera.transform.position;
+            camera.transform.position = new Vector3(playerPosition.x, playerPosition.y, cameraPosition.z);
+        }
+    }
+
+    /// <summary>
     /// 이동에 대한 전처리 작업을 바탕으로 CallMoveEvent 실행
     /// </summary>
     /// <param name="value"></param>
