@@ -12,6 +12,10 @@ public class PlayerInputController : TopDownController
         camera = Camera.main;
     }
 
+    /// <summary>
+    /// 이동에 대한 전처리 작업을 바탕으로 CallMoveEvent 실행
+    /// </summary>
+    /// <param name="value"></param>
     public void OnMove(InputValue value) // 누른 키보드 키값의 정보가 value에 들어옴
     {
         Vector2 moveInput = value.Get<Vector2>().normalized; // Get<Vector2>()로 키값 받아오고, 크기 1인 방향 벡터로 변경
@@ -19,6 +23,10 @@ public class PlayerInputController : TopDownController
         // 실제 움직이는 처리는 여기가 아니라 PlayerMovement에서 함
     }
 
+    /// <summary>
+    /// 마우스 에임에 대한 전처리 작업을 바탕으로 CallLookEvent 실행
+    /// </summary>
+    /// <param name="value"></param>
     public void OnLook(InputValue value)
     {
         Vector2 newAim = value.Get<Vector2>(); // 마우스 입력에서는 방향이 아닌 위치를 나타내므로 정규화를 하지 않음
@@ -27,6 +35,7 @@ public class PlayerInputController : TopDownController
         Vector2 worldPos = camera.WorldToScreenPoint(newAim); 
         // 플레이어를 기준으로 한 마우스 입력 위치의 상대적인 위치
         // 이것은 마우스 입력 위치와 플레이어 사이의 방향 벡터가 됨
+        // 점A에서 점B로 가는 벡터 -> B-A
         newAim = (worldPos - (Vector2)transform.position).normalized; 
         
 

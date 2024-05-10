@@ -28,7 +28,7 @@ public class TopDownMovement : MonoBehaviour
 
     /// <summary>
     /// Update에서 매프레임마다 눌려지고 있는지 판단(이동 방향)
-    /// TopDownController에 등록되어 있으니가 입력이 있을 때 실행되는 함수
+    /// TopDownController에 등록되어 있으니까 입력이 있을 때 실행되는 함수
     /// </summary>
     /// <param name="direction"></param>
     private void Move(Vector2 direction)
