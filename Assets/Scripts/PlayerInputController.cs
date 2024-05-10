@@ -31,14 +31,13 @@ public class PlayerInputController : TopDownController
     {
         Vector2 newAim = value.Get<Vector2>(); // 마우스 입력에서는 방향이 아닌 위치를 나타내므로 정규화를 하지 않음
 
-        // 마우스 입력 위치를 화면 좌표계로부터 게임 세계 좌표계로 변환
-        Vector2 worldPos = camera.WorldToScreenPoint(newAim); 
+        // 마우스 입력 위치를 화면 좌표계로부터 월드 좌표계로 변환
+        Vector2 worldPos = camera.ScreenToWorldPoint(newAim); 
         // 플레이어를 기준으로 한 마우스 입력 위치의 상대적인 위치
         // 이것은 마우스 입력 위치와 플레이어 사이의 방향 벡터가 됨
         // 점A에서 점B로 가는 벡터 -> B-A
         newAim = (worldPos - (Vector2)transform.position).normalized; 
         
-
         CallLookEvent(newAim);
     }
 }

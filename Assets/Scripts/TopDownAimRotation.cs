@@ -19,14 +19,14 @@ public class TopDownAimRotation : MonoBehaviour
 
     private void OnAim(Vector2 direction)
     {
-        RotateArm(direction);
+        Rotate(direction);
     }
 
     /// <summary>
     /// 캐릭터와 마우스 사이의 각도의 절대값이 90도 이상이면 캐릭터 이미지 플립
     /// </summary>
     /// <param name="direction"></param>
-    private void RotateArm(Vector2 direction)
+    private void Rotate(Vector2 direction)
     {
         float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; // Mathf.Rad2Deg -> degree로 변환
 
