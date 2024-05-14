@@ -13,7 +13,7 @@ public class CharacterAnimationController : AnimationController
         base.Awake();
     }
     private void Start()
-    {
+    {       
         controller.OnMoveEvent += Move;
     }
 
