@@ -34,7 +34,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0.0f;
-        inGame.SetActive(false);
     }
 
     private void Update()
@@ -49,7 +48,7 @@ public class GameManager : MonoBehaviour
         {
             isPlay = true;
             inGame.SetActive(true);
-            joinPanel.SetActive(false);          
+            joinPanel.SetActive(false);
             Time.timeScale = 1.0f;
         }
     }
