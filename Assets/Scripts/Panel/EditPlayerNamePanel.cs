@@ -8,8 +8,8 @@ using UnityEngine;
 /// </summary>
 public class EditPlayerNamePanel : MonoBehaviour
 {
-    public GameObject editPlayerNamePanel;
-    public TMP_InputField editInputField; // 플레이어 이름 수정
+    [SerializeField] private GameObject editPlayerNamePanel;
+    [SerializeField] private TMP_InputField editInputField; // 플레이어 이름 수정
     public void ChangePlayerName()
     {
         GameManager.instance.playerName.text = editInputField.text;

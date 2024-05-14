@@ -9,7 +9,7 @@ using UnityEngine.UI;
 /// </summary>
 public class DisplaySelectCharacter : MonoBehaviour
 {
-    public Sprite[] character;
+    [SerializeField] private Sprite[] character;
     private Image selectCharacter;
 
     private void Awake()

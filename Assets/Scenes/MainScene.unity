@@ -26081,14 +26081,12 @@ MonoBehaviour:
   inGame: {fileID: 445423244}
   joinPanel: {fileID: 166087230}
   nameInputField: {fileID: 674725663}
-  playerName: {fileID: 1901138423}
   timeText: {fileID: 619840344}
   animator: {fileID: 2112159661}
   controller:
   - {fileID: 9100000, guid: 9906e1b3758bbd44081be95c1c96db57, type: 2}
   - {fileID: 22100000, guid: aa82a29331aaeb14cb2ebebb88ffc5d3, type: 2}
-  playerType: 0
-  isPlay: 0
+  playerName: {fileID: 1901138423}
 --- !u!4 &1033205018
 Transform:
   m_ObjectHideFlags: 0

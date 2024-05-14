@@ -8,7 +8,7 @@ using UnityEngine;
 /// </summary>
 public class Interaction : MonoBehaviour
 {
-    public GameObject interactionPanel;
+    [SerializeField] private GameObject interactionPanel;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -7,16 +7,18 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public GameObject inGame;
-    public GameObject joinPanel;
-    public TMP_InputField nameInputField; // 입력받은 플레이어 이름
-    public TMP_Text playerName;
-    public TMP_Text timeText;
-    public Animator animator;
-    public RuntimeAnimatorController[] controller;
 
-    public int playerType;
-    public bool isPlay;
+    [SerializeField] private GameObject inGame;
+    [SerializeField] private GameObject joinPanel;
+    [SerializeField] private TMP_InputField nameInputField; // 입력받은 플레이어 이름
+    [SerializeField] private TMP_Text timeText;
+    [SerializeField] private Animator animator;
+    [SerializeField] private RuntimeAnimatorController[] controller;
+
+    public TMP_Text playerName;
+
+    public int playerType { get; private set; }
+    public bool isPlay { get; private set; }
 
     private void Awake()
     {

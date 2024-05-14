@@ -8,9 +8,9 @@ using TMPro;
 /// </summary>
 public class ParticipantPanel : MonoBehaviour
 {
-    public GameObject participantPanel;
-    public List<string> NameTextList = new List<string>();
-    public TMP_Text participantList;
+    [SerializeField] private GameObject participantPanel;
+    [SerializeField] private List<string> NameTextList = new List<string>();
+    [SerializeField] private TMP_Text participantList;
     public void EnableParticipantPanel()
     {
         participantPanel.SetActive(true);

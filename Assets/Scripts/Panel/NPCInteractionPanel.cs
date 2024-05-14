@@ -8,8 +8,8 @@ using UnityEngine;
 /// </summary>
 public class NPCInteractionPanel : MonoBehaviour
 {
-    public GameObject interactionPanel;
-    public GameObject chatPanel;
+    [SerializeField] private GameObject interactionPanel;
+    [SerializeField] private GameObject chatPanel;
 
     public void EnableChatPanel()
     {

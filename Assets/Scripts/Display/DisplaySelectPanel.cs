@@ -8,9 +8,9 @@ using UnityEngine;
 /// </summary>
 public class DisplaySelectPanel : MonoBehaviour
 {
-    public GameObject selectPanel;
-    public GameObject joinPanel;
-    public GameObject selectImg;
+    [SerializeField] private GameObject selectPanel;
+    [SerializeField] private GameObject joinPanel;
+    [SerializeField] private GameObject selectImg;
 
     public void EnableSelectPanel()
     {
