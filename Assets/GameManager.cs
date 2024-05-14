@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;  
+    public static GameManager instance;
+    public GameObject inGame;
     public GameObject joinPanel;
     public TMP_InputField nameInputField; // 입력받은 플레이어 이름
     public TMP_Text playerName;
@@ -27,8 +28,13 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
+        }        
+    }
+
+    private void Start()
+    {
         Time.timeScale = 0.0f;
+        inGame.SetActive(false);
     }
 
     private void Update()
@@ -42,6 +48,7 @@ public class GameManager : MonoBehaviour
         if (playerName.text.Length >= 2 && playerName.text.Length <= 10)
         {
             isPlay = true;
+            inGame.SetActive(true);
             joinPanel.SetActive(false);          
             Time.timeScale = 1.0f;
         }
