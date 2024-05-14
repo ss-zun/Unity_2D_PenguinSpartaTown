@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// NPC 근처에 닿았는지
+/// </summary>
 public class Interaction : MonoBehaviour
 {
     public GameObject interactionPanel;

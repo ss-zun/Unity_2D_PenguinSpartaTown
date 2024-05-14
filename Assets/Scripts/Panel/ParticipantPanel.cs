@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// 인게임에서 참석자 패널
+/// </summary>
 public class ParticipantPanel : MonoBehaviour
 {
     public GameObject participantPanel;

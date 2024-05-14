@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// 인게임에서 플레이어 이름 변경 패널
+/// </summary>
 public class EditPlayerNamePanel : MonoBehaviour
 {
     public GameObject editPlayerNamePanel;

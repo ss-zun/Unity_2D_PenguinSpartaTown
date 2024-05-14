@@ -2,6 +2,9 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// 캐릭터 이미지 플립
+/// </summary>
 public class TopDownAimRotation : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer characterRenderer;

@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// NPC¿Í ´ëÈ­
+/// </summary>
 public class NPCInteractionPanel : MonoBehaviour
 {
     public GameObject interactionPanel;

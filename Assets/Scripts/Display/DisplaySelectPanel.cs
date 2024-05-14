@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// 인게임에서 캐릭터 선택 패널 끄고 켜기
+/// </summary>
 public class DisplaySelectPanel : MonoBehaviour
 {
     public GameObject selectPanel;

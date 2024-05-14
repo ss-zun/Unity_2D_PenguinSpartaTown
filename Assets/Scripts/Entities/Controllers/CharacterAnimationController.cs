@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// 캐릭터 이동 애니메이션 처리
+/// </summary>
 public class CharacterAnimationController : AnimationController
 {
     private static readonly int isWalking = Animator.StringToHash("isWalking");
